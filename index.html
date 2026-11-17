@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Upper part: countdown -->
+    <div class="upper">
+      <div class="timer-frame">
+        <div class="timer-face" id="timer-face">
+          <div class="progress" id="progress"></div>
+          <span class="time" id="time-left">20:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom part: controls -->
+    <div class="bottom">
+      <h2 id="label">Session 1</h2>
+
+      <div class="settings">
+        <div class="setting">
+          <span class="setting-title">session time</span>
+          <span class="value session-value"><span id="session-length">20</span> min</span>
+          <div class="btn-group">
+            <button class="small-btn" id="session-decrement" aria-label="Decrease session time">-</button>
+            <button class="small-btn" id="session-increment" aria-label="Increase session time">+</button>
+          </div>
+        </div>
+
+        <div class="setting">
+          <span class="setting-title">break time</span>
+          <span class="value break-value"><span id="break-length">5</span> min</span>
+          <div class="btn-group">
+            <button class="small-btn" id="break-decrement" aria-label="Decrease break time">-</button>
+            <button class="small-btn" id="break-increment" aria-label="Increase break time">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="big-btn" id="start-btn">Start</button>
+        <button class="big-btn" id="reset-btn">Reset</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
